@@ -56,9 +56,9 @@ class AzericardCustomFactory extends AzericardFactory
 {
     public static function boot(ProviderContract $provider): void
     {
-        $provider->setCountry("us")
-            ->setLang("en")
-            ->setCurrency("usd");
+        $provider->setCountry("US")
+            ->setLang("EN")
+            ->setCurrency("USD");
     }
 }
 
