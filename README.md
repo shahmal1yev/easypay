@@ -1,4 +1,4 @@
-# PHP Payment Services
+# PHP Payment Integration Package
 
 A PHP package that makes it easy to integrate different online payment systems into your projects.
 
@@ -103,3 +103,7 @@ $azericard->callback(function($order, $rrn, $intRef) {
 ### Contributing
 
 The project is generally open to pull requests. Once reviewed and deemed suitable, I will approve them.
+
+### License
+
+The PHP Payment Integration Package is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this PHP package in accordance with the terms specified in the license.
