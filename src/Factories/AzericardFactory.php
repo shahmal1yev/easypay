@@ -2,9 +2,9 @@
 
 namespace Shahmal1yev\Payment\Factories;
 
-use Shahmal1yev\Payment\Contracts\Payment\FactoryContract;
-use Shahmal1yev\Payment\Contracts\Payment\ProviderContract;
-use Shahmal1yev\Payment\Contracts\Payment\ServiceContract;
+use Shahmal1yev\Payment\Contracts\FactoryContract;
+use Shahmal1yev\Payment\Contracts\ProviderContract;
+use Shahmal1yev\Payment\Contracts\ServiceContract;
 use Shahmal1yev\Payment\Services\AzericardService;
 
 class AzericardFactory implements FactoryContract

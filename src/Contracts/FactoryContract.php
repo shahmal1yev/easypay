@@ -1,6 +1,6 @@
 <?php
 
-namespace Shahmal1yev\Payment\Contracts\Payment;
+namespace Shahmal1yev\Payment\Contracts;
 
 interface FactoryContract
 {

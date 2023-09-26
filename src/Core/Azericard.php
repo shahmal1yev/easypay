@@ -2,7 +2,7 @@
 
 namespace Shahmal1yev\Payment\Core;
 
-use Shahmal1yev\Payment\Contracts\Payment\ProviderContract;
+use Shahmal1yev\Payment\Contracts\ProviderContract;
 
 class Azericard implements ProviderContract
 {

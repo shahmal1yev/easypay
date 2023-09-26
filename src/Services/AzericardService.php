@@ -2,10 +2,10 @@
 
 namespace Shahmal1yev\Payment\Services;
 
-use Shahmal1yev\Payment\Contracts\Payment\Azericard\AzericardServiceContract;
+use Shahmal1yev\Payment\Contracts\Azericard\AzericardServiceContract;
 use Shahmal1yev\Payment\Core\Azericard;
-use Shahmal1yev\Payment\Contracts\Payment\ServiceContract;
-use Shahmal1yev\Payment\Contracts\Payment\ProviderContract;
+use Shahmal1yev\Payment\Contracts\ServiceContract;
+use Shahmal1yev\Payment\Contracts\ProviderContract;
 
 class AzericardService implements AzericardServiceContract, ServiceContract
 {
