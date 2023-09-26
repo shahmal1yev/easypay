@@ -72,6 +72,8 @@ $azericard->process(
 ```
 
 ```env
+# .env file
+
 AZERICARD_PS_URL="NULL"
 AZERICARD_PS_MERCHANT_NAME="NULL"
 AZERICARD_PS_MERCHANT_URL="NULL"
@@ -89,7 +91,7 @@ AZERICARD_PS_LANG="NULL"
 ```php
 $azericard->callback(function($order, $rrn, $intRef) {
     # callback for result
-    
+
     # $order   => order
     # $rrn     => rrn
     # $intRef  => int ref
