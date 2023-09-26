@@ -37,16 +37,63 @@ $ composer install
 
 ### Usage
 
-Provide examples and usage scenarios for how to use the project. Including sample code can help users get started quickly.
-
 ```php
-require_once 'vendor/autoload.php';
-
-use Shahmal1yev\Payment\Factories\AzericardFactory;
+use Shahmal1yev\Payment\Factories\Azericard\AzericardFactory;
 
 $azericard = AzericardFactory::create();
 
-$azericard->complete(12);
+$azericard->process(
+    000001, /* order */ 
+    "Description of the sale", 
+    2.5 /* amount */
+);
+```
+
+```php
+use Shahmal1yev\Payment\Factories\Azericard\AzericardFactory;
+
+class AzericardCustomFactory extends AzericardFactory
+{
+    public static function boot(ProviderContract $provider): void
+    {
+        $provider->setCountry("us")
+            ->setLang("en")
+            ->setCurrency("usd");
+    }
+}
+
+$azericard = AzericardCustomFactory::create();
+
+$azericard->process(
+    000001, /* order */ 
+    "Description of the sale", 
+    2.5 /* amount */
+);
+```
+
+```env
+AZERICARD_PS_URL="NULL"
+AZERICARD_PS_MERCHANT_NAME="NULL"
+AZERICARD_PS_MERCHANT_URL="NULL"
+AZERICARD_PS_TERMINAL="NULL"
+AZERICARD_PS_EMAIL="NULL"
+AZERICARD_PS_TRTYPE="1"
+AZERICARD_PS_CURRENCY="NULL"
+AZERICARD_PS_COUNTRY="AZ"
+AZERICARD_PS_GMT="+4"
+AZERICARD_PS_KEY_FOR_SIGN="NULL"
+AZERICARD_PS_BACKREF="NULL"
+AZERICARD_PS_LANG="NULL"
+```
+
+```php
+$azericard->callback(function($order, $rrn, $intRef) {
+    # callback for result
+    
+    # $order   => order
+    # $rrn     => rrn
+    # $intRef  => int ref
+});
 ```
 
 ### Contributing
