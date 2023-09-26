@@ -6,15 +6,16 @@ A PHP package that makes it easy to integrate different online payment systems i
 
 ## Getting Started
 
-To start using the project, follow the steps below.
+To start using the package, follow the steps below.
 
 ### Requirements
 
 Specify the software and libraries required to use your project. For example:
 
 - PHP 8.0 or newer
-- Composer 2 (package manager)
+- [Composer 2](https://getcomposer.org/download/)
 - [vlucas/dotenv package](https://github.com/vlucas/phpdotenv)
+- [PHPUnit](https://phpunit.de/getting-started/phpunit-10.html)
 - [PHP Curl Library](https://www.php.net/manual/en/curl.setup.php)
 
 ### Installation
