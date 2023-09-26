@@ -1,0 +1,17 @@
+{
+    "name": "shahmal1yev/payment-services",
+    "description": "Payment Services package for PHP",
+    "autoload": {
+        "psr-4": {
+            "Shahmal1yev\\Payment\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
