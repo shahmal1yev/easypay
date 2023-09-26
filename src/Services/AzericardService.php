@@ -7,7 +7,7 @@ use Shahmal1yev\Payment\Core\Azericard;
 use Shahmal1yev\Payment\Contracts\Payment\ServiceContract;
 use Shahmal1yev\Payment\Contracts\Payment\ProviderContract;
 
-class AzericardService implements AzericardServiceContract
+class AzericardService implements AzericardServiceContract, ServiceContract
 {
     private ProviderContract $provider;
     
