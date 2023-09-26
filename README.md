@@ -2,7 +2,7 @@
 
 A PHP package that makes it easy to integrate different online payment systems into your projects.
 
-![Banner](./banner.webp)
+![Banner](./banner.png)
 
 ## Getting Started
 
@@ -15,6 +15,7 @@ Specify the software and libraries required to use your project. For example:
 - PHP 8.0 or newer
 - Composer 2 (package manager)
 - [vlucas/dotenv package](https://github.com/vlucas/phpdotenv)
+- [PHP Curl Library](https://www.php.net/manual/en/curl.setup.php)
 
 ### Installation
 
