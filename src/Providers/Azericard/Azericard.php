@@ -1,6 +1,6 @@
 <?php
 
-namespace Shahmal1yev\Payment\Core;
+namespace Shahmal1yev\Payment\Providers\Azericard;
 
 use Shahmal1yev\Payment\Contracts\ProviderContract;
 

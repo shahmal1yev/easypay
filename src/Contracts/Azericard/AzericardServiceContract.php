@@ -2,7 +2,7 @@
 
 namespace Shahmal1yev\Payment\Contracts\Azericard;
 
-use Shahmal1yev\Payment\Core\Azericard;
+use Shahmal1yev\Payment\Providers\Azericard\Azericard;
 
 interface AzericardServiceContract
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Shahmal1yev\Payment\Factories;
+namespace Shahmal1yev\Payment\Factories\Azericard;
 
 use Shahmal1yev\Payment\Contracts\FactoryContract;
 use Shahmal1yev\Payment\Contracts\ProviderContract;
 use Shahmal1yev\Payment\Contracts\ServiceContract;
-use Shahmal1yev\Payment\Services\AzericardService;
+use Shahmal1yev\Payment\Services\Azericard\AzericardService;
 
 class AzericardFactory implements FactoryContract
 {
