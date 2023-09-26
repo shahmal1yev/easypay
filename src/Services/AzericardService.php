@@ -55,7 +55,7 @@ class AzericardService implements AzericardServiceContract, ServiceContract
         return false;
     }
 
-    public function provider()
+    public function provider(): Azericard
     {
         return $this->provider;
     }
