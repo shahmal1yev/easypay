@@ -53,6 +53,7 @@ $azericard->process(
 
 ```php
 use Shahmal1yev\Payment\Factories\Azericard\AzericardFactory;
+use Shahmal1yev\Payment\Contracts\ProviderContract;
 
 class AzericardCustomFactory extends AzericardFactory
 {
