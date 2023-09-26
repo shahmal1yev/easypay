@@ -2,11 +2,12 @@
 
 namespace Shahmal1yev\Payment\Services;
 
+use Shahmal1yev\Payment\Contracts\Payment\Azericard\AzericardServiceContract;
 use Shahmal1yev\Payment\Core\Azericard;
 use Shahmal1yev\Payment\Contracts\Payment\ServiceContract;
 use Shahmal1yev\Payment\Contracts\Payment\ProviderContract;
 
-class AzericardService implements ServiceContract
+class AzericardService implements AzericardServiceContract
 {
     private ProviderContract $provider;
     
@@ -24,7 +25,7 @@ class AzericardService implements ServiceContract
     {
         $url = $this->provider()->getUrl();
         $ch = curl_init($url);
-        $data = $this->getRequestData();
+        $data = $this->getRequestData($order, $desc, $amount);
 
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
