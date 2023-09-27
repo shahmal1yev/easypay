@@ -8,6 +8,7 @@ class PulPalInvalidAmount extends Exception
 {
     const THROW_MUST_BE_ZERO = "If \"productType\" is 4, \"amount\" must be 0";
     const THROW_MUST_BE_NON_NEGATIVE = "\"amount\" must not be less than zero";
+    const THROW_MAXLENGTH = "\"amount\" cannot exceed 32 digits in length";
 
     public function __construct(string $message)
     {

@@ -122,6 +122,11 @@ class PulPal
             throw new PulPalInvalidAmount(PulPalInvalidAmount::THROW_MUST_BE_NON_NEGATIVE);
         }
 
+        if (strlen($amount) > 32)
+        {
+            throw new PulPalInvalidAmount(PulPalInvalidAmount::THROW_MAXLENGTH);
+        }
+
         $this->amount = $amount;
 
         return $this;
