@@ -90,6 +90,11 @@ class PulPal
             throw new PulPalInvalidDebt(PulPalInvalidDebt::THROW_MUST_BE_NON_NEGATIVE);
         }
 
+        if (strlen($debt) > 32)
+        {
+            throw new PulPalInvalidDebt(PulPalInvalidDebt::THROW_MAXLENGTH);
+        }
+
         $this->debt = $debt;
 
         return $this;
