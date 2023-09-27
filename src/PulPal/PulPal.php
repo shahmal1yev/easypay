@@ -3,6 +3,7 @@
 namespace Shahmal1yev\Payment\PulPal;
 
 use Shahmal1yev\Payment\PulPal\Exceptions\PulPalInvalidDebt;
+use Shahmal1yev\Payment\PulPal\Exceptions\PulPalInvalidPrice;
 use Shahmal1yev\Payment\PulPal\Exceptions\PulPalInvalidAmount;
 use Shahmal1yev\Payment\PulPal\Exceptions\PulPalInvalidProductType;
 use Shahmal1yev\Payment\PulPal\Exceptions\PulPalInvalidProviderType;
@@ -28,6 +29,11 @@ class PulPal
 
     public function setPrice(int $price): PulPal
     {
+        if (strlen($price) > 32)
+        {
+            throw new PulPalInvalidPrice(PulPalInvalidPrice::THROW_MAXLENGTH);
+        }
+
         $this->price = $price;
 
         return $this;
